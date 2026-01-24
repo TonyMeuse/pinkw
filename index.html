@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink W Firewood and Woodlands | Premium Choice Grade Firewood</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23654321" width="1200" height="600"/><text x="600" y="300" font-size="120" fill="%23886644" text-anchor="middle" opacity="0.3">🪵</text></svg>');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .logo-circle {
+            width: 240px;
+            height: 240px;
+            background: linear-gradient(135deg, #1a2a3a 0%, #2c3e4e 50%, #3a4a5a 100%);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+            border: 5px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+
+        .logo-circle::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(ellipse at 30% 30%, rgba(90, 110, 130, 0.3) 0%, transparent 50%),
+                linear-gradient(180deg, rgba(26, 42, 58, 0.8) 0%, rgba(58, 74, 90, 0.9) 100%);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .logo-w {
+            font-size: 110px;
+            font-weight: 900;
+            color: #ff3d7f;
+            font-family: 'Arial Black', Arial, sans-serif;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            z-index: 2;
+            letter-spacing: -5px;
+            line-height: 1;
+            margin-top: 10px;
+        }
+
+        .logo-phone {
+            font-size: 20px;
+            font-weight: 900;
+            color: white;
+            font-family: 'Arial Black', Arial, sans-serif;
+            z-index: 2;
+            margin-top: 5px;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
+            letter-spacing: 1px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: #f0f0f0;
+            font-weight: 600;
+        }
+
+        .hero .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #8b4513, #a0522d);
+            color: white;
+            padding: 18px 45px;
+            font-size: 1.2rem;
+            border: 2px solid #ff3366;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(139, 69, 19, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(255, 51, 102, 0.5);
+            background: linear-gradient(135deg, #a0522d, #8b4513);
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(51, 51, 51, 0.95);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff3366;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #333;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(135deg, #8b4513, #a0522d);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about {
+            background: #f9f9f9;
+        }
+
+        .about-content {
+            text-align: center;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(139, 69, 19, 0.2);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #8b4513;
+        }
+
+        /* Why Choose Us Section */
+        .why-choose {
+            background: linear-gradient(135deg, #5a4a3a, #6b5442);
+            color: white;
+        }
+
+        .why-choose h2 {
+            color: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #f9f9f9;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .contact-item {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            min-width: 250px;
+        }
+
+        .contact-icon {
+            font-size: 3rem;
+            color: #8b4513;
+            margin-bottom: 15px;
+        }
+
+        .contact-item h3 {
+            color: #8b4513;
+            margin-bottom: 10px;
+        }
+
+        .contact-item a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .contact-item a:hover {
+            color: #8b4513;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer-pink {
+            color: #ff3366;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                height: auto;
+                min-height: 100vh;
+                padding: 40px 20px;
+            }
+
+            .logo-circle {
+                width: 180px;
+                height: 180px;
+            }
+
+            .logo-w {
+                font-size: 80px;
+            }
+
+            .logo-phone {
+                font-size: 16px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .tagline {
+                font-size: 1.1rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1rem;
+                padding: 0 10px;
+            }
+
+            .cta-button {
+                padding: 15px 35px;
+                font-size: 1rem;
+            }
+
+            nav {
+                padding: 0.5rem 0;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px 0;
+            }
+
+            nav a {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 60px 15px;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .about-content {
+                font-size: 1rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .service-card {
+                padding: 30px 20px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+            }
+
+            .contact-item {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+
+        /* Small mobile devices */
+        @media (max-width: 480px) {
+            .logo-circle {
+                width: 150px;
+                height: 150px;
+            }
+
+            .logo-w {
+                font-size: 65px;
+            }
+
+            .logo-phone {
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+
+            .hero .tagline {
+                font-size: 1rem;
+            }
+
+            .hero .subtitle {
+                font-size: 0.9rem;
+            }
+
+            .cta-button {
+                padding: 12px 28px;
+                font-size: 0.95rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .service-card,
+            .feature {
+                padding: 25px 15px;
+            }
+
+            .service-icon,
+            .feature-icon,
+            .contact-icon {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="logo-circle">
+            <div class="logo-w">W</div>
+            <div class="logo-phone">902-307-0165</div>
+        </div>
+        <h1>Pink W Firewood and Woodlands</h1>
+        <p class="tagline">Processor of Premium Choice Grade Firewood 🪵</p>
+        <p class="subtitle">Serving Southwest Nova Scotia with quality firewood and professional forestry services</p>
+        <a href="#contact" class="cta-button">Get Your Firewood Today</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why-choose">Why Choose Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>Welcome to Pink W Firewood and Woodlands, your trusted source for premium choice grade firewood in Southwest Nova Scotia. We specialize in processing and delivering high-quality firewood that keeps your home warm and cozy throughout the cold months.</p>
+            <p style="margin-top: 20px;">With expertise in forestry and logging, we understand the importance of properly seasoned, clean-burning wood. Our commitment to quality and customer satisfaction has made us a preferred choice for homeowners across the region.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🪵</div>
+                <h3>Premium Firewood</h3>
+                <p>Choice grade firewood, properly seasoned and ready to burn. Available in various quantities to meet your heating needs.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🚚</div>
+                <h3>Delivery Service</h3>
+                <p>Convenient delivery throughout Southwest Nova Scotia. We bring quality firewood right to your doorstep.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🌲</div>
+                <h3>Forestry & Logging</h3>
+                <p>Professional forestry and logging services with sustainable practices and expert woodland management.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose" class="why-choose">
+        <h2>Why Choose Pink W Firewood?</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">⭐</div>
+                <h3>Premium Quality</h3>
+                <p>Choice grade firewood that burns clean and efficient</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🎯</div>
+                <h3>Professional Service</h3>
+                <p>Expert forestry knowledge and reliable delivery</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🌲</div>
+                <h3>Sustainable Practices</h3>
+                <p>Responsible woodland management and harvesting</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💯</div>
+                <h3>Customer Satisfaction</h3>
+                <p>Dedicated to meeting your heating needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 20px;">Ready to order your premium firewood? Get in touch today!</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <h3>Call Us</h3>
+                <a href="tel:9023070165">(902) 307-0165</a>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <h3>Location</h3>
+                <p>Southwest Nova Scotia</p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📘</div>
+                <h3>Social Media</h3>
+                <a href="https://www.facebook.com/profile.php?id=100095489613516" target="_blank">Follow us on Facebook</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong class="footer-pink">Pink W Firewood and Woodlands</strong></p>
+        <p>Processor of Premium Choice Grade Firewood</p>
+        <p>Forestry & Logging | Southwest Nova Scotia</p>
+        <p style="margin-top: 20px;">&copy; 2025 Pink W Firewood and Woodlands. All rights reserved.</p>
+    </footer>
+</body>
+</html>
