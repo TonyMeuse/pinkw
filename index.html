@@ -249,6 +249,33 @@
             min-width: 250px;
             flex: 1;
             max-width: 350px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .contact-item-link {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            min-width: 250px;
+            flex: 1;
+            max-width: 350px;
+            text-decoration: none;
+            color: #333;
+            display: block;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .contact-item-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(139,69,19,0.3);
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(139,69,19,0.3);
         }
 
         .contact-icon {
@@ -257,12 +284,14 @@
             margin-bottom: 15px;
         }
 
-        .contact-item h3 {
+        .contact-item h3,
+        .contact-item-link h3 {
             color: #8b4513;
             margin-bottom: 10px;
         }
 
-        .contact-item a {
+        .contact-item a,
+        .contact-item-link p {
             color: #333;
             text-decoration: none;
             font-size: 1.1rem;
@@ -271,6 +300,10 @@
 
         .contact-item a:hover {
             color: #8b4513;
+        }
+
+        .contact-item-link p {
+            margin: 0;
         }
 
         footer {
@@ -512,21 +545,21 @@
         <h2>Contact Us</h2>
         <p style="text-align: center; font-size: 1.1rem; margin-bottom: 20px;">Ready to order your premium firewood? Get in touch today!</p>
         <div class="contact-info">
-            <div class="contact-item">
+            <a href="tel:9023070165" class="contact-item-link">
                 <div class="contact-icon">📞</div>
                 <h3>Call or Text</h3>
-                <a href="tel:9023070165">(902) 307-0165</a>
-            </div>
-            <div class="contact-item">
+                <p>(902) 307-0165</p>
+            </a>
+            <a href="https://www.google.com/maps/search/Southwest+Nova+Scotia+Clare+Yarmouth+Digby" target="_blank" rel="noopener" class="contact-item-link">
                 <div class="contact-icon">📍</div>
                 <h3>Service Area</h3>
                 <p>Clare, Yarmouth, Digby<br>Southwest Nova Scotia</p>
-            </div>
-            <div class="contact-item">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100095489613516" target="_blank" rel="noopener" class="contact-item-link">
                 <div class="contact-icon">📘</div>
                 <h3>Social Media</h3>
-                <a href="https://www.facebook.com/profile.php?id=100095489613516" target="_blank" rel="noopener">Follow us on Facebook</a>
-            </div>
+                <p>Follow us on Facebook</p>
+            </a>
         </div>
     </section>
 
