@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://tonymeuse.github.io/pinkw/sitemap.xml
+Sitemap: https://pinkw.ca/sitemap.xml
